@@ -10,6 +10,7 @@ body {
   height: 100vh;
   display: grid;
   place-items: center;
+  font-family: "Roboto Mono", monospace;
 }
 /* Containers */
 .container {
@@ -28,7 +29,7 @@ body {
   text-align: center;
   line-height: 0.4;
   margin-bottom: 40px;
-  font-family: "Roboto Mono", monospace;
+  /* font-family: "Roboto Mono", monospace; */
 }
 .header h1 {
   text-transform: uppercase;
@@ -43,9 +44,28 @@ body {
   display: flex;
   flex-direction: column;
 }
-#form label {
-  display: block;
+.text-field {
+  position: relative;
 }
+.text-field label {
+  display: block;
+  background-color: white;
+  width: fit-content;
+  font-size: 1rem;
+  padding: 0 3px;
+  position: absolute;
+  left: 5px;
+}
+.text-field input[type="email"],
+input[type="password"] {
+  width: 45%;
+  max-width: 310px;
+  min-width: fit-content;
+  margin: 10px 0;
+  outline: 0;
+  padding: 10px;
+}
+
 /* Form Background */
 .bg-container img {
   width: 100%;
