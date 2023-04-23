@@ -1,42 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="header">
-
-    </div>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="inner-container">
-            <form action="">
-                <div class="text-field">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="jonhdoe@gmail.com" required>
-                </div>
-                <div class="text-field">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" pattern="[A-Za-z]+[0-9]+[@*$&]+" minlength="8" required autocomplete="new-password">
-                </div>
-                <button type="submit">Log in</button>
-            </form>
-            <div class="form-footer">
-                <figure>
-                    <img src="https://img.icons8.com/fluency/240/null/google-logo.png" height="32px" width="32px"/> Google
-                    
-                </figure>
-                <figure>
-                    <img src="https://img.icons8.com/color/240/null/facebook-new.png" width="32px" height="32px"/> Facebook
-                </figure>
+      <div class="header">
+        <h1>Welcome Please Log in</h1>
+        <p>Login to access our increible set of amazing features</p>
+      </div>
+      <div class="inner-container">
+        <div class="form-container">
+          <form action="" id="form">
+            <div class="text-field">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="jonhdoe@gmail.com"
+                required
+              />
             </div>
+            <div class="text-field">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                pattern="[A-Za-z]+[0-9]+[@*$&]+"
+                minlength="8"
+                required
+                autocomplete="new-password"
+              />
+            </div>
+            <button type="submit">Log in</button>
+          </form>
+          <div class="form-footer">
+            <figure>
+              <img
+                src="https://img.icons8.com/fluency/240/null/google-logo.png"
+                height="32px"
+                width="32px"
+              />
+              Google
+            </figure>
+            <figure>
+              <img
+                src="https://img.icons8.com/color/240/null/facebook-new.png"
+                width="32px"
+                height="32px"
+              />
+              Facebook
+            </figure>
+          </div>
         </div>
-        <div class="inner-container">
-            <img src="./images/summer-island.jpg" alt="">
+        <div class="bg-container">
+          <img src="./images/summer-island.jpg" alt="" />
         </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
