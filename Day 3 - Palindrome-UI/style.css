@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
 *,
 *::after,
 *::before {
@@ -6,7 +8,7 @@
 body {
   display: flex;
   flex-direction: column;
-  background-color: #f4eff8;
+  background-color: #faf8fc;
   font-family: monospace;
   text-align: center;
 }
@@ -14,6 +16,7 @@ body {
 .header {
   font-size: 4rem;
   margin-bottom: 20px;
+  font-family: "Pacifico", cursive;
 }
 
 .paragraphs {
@@ -62,16 +65,22 @@ form input[type="submit"]:hover {
 
 .results {
   background-color: #fff;
+  border: 1px solid black;
   border-radius: 15px;
   margin: 45px;
   width: 90%;
   max-width: 850px;
   min-height: fit-content;
-  padding: 50px;
+  padding: 0px 0px 50px;
 }
 .results h1 {
   padding: 0;
-  margin: 0;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-decoration: underline;
+}
+.results p {
+  font-size: 1.5rem;
 }
 .palindrome {
   color: #75c26f;
